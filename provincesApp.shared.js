@@ -1,3 +1,3 @@
 (function () {
-    angular.module('provincesAppShared',['provincesApp'])
+    angular.module('provincesAppShared',[])
 }());

@@ -1,9 +1,9 @@
 (function () {
     'use strict';
     angular.module('provincesApp')
-        .controller('provinceController',ProvinceCtrl)
+        // .controller('provinceController',ProvinceCtrl)
         .component('provinceCard',{
-            templateUrl:'provinceCard.html',
+            template:"<div ><ul><li ng-repeat='item in $ctrl.provincesList'>{{item.name}}</li></ul></div><hyf-list title='Hello!' item='$ctrl.province'></hyf-list></hyf-list>",
             controller: ProvinceCtrl
         });
     function ProvinceCtrl(ProvinceServ) {
@@ -18,3 +18,5 @@
             });
     };
 }());
+
+
